@@ -5,22 +5,17 @@ from EntropyWeight.weight import weight
 def entropyWeight(data):
 
     #normalize data
-    print()
-    print()
-    print('Normalizing data...')
+    print('\n\nNormalizing data...')
     normData = normalize(data)
     print(normData)
 
     #compute entropy
-    print()
-    print()
-    print('Computing Entropy...')
+    print('\n\nComputing Entropy...')
     entropyData = entropy(normData)
     print(entropyData)
 
     #compute weights
-    print()
-    print()
-    print('Computing Weights...')
+    print('\n\nComputing Weights...')
     weights = weight(entropyData)
+    print(weights)
     return weights

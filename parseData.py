@@ -2,7 +2,9 @@ import numpy as np
 
 def parseData(data):
     arr = []
+    #names=[]
     for i in data:
+        #print(i)
         curArr = []
         curArr.append((i[5] * i[6])/i[2])
         curArr.append(i[3])

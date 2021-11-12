@@ -12,21 +12,16 @@ impact = [1,1,1,1,0]
 print(data)
 
 #normalize data
-print()
-print()
-print('Normalizing data...')
+
+print('\n\nNormalizing data...')
 normData = normalizeData(data, weights)
 print(normData)
 
 #calculate Euclidean Distance
-print()
-print()
-print('Calculating Euclidean Distance...')
+print('\n\nCalculating Euclidean Distance...')
 bestWorst = getBestWorst(normData, impact)
 print(bestWorst)
 
 #calculate topsis score
-print()
-print()
-print('Calculating Topsis Score...')
+print('\n\nCalculating Topsis Score...')
 calculate(bestWorst)
