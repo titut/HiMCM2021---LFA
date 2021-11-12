@@ -5,8 +5,7 @@ from TOPSIS.topsis import Topsis
 from pprint import pprint
 
 #names, 
-
-#one for loop instead? combine functions?
+#one for loop instead? combine functions of parseData and import?
 names,csv = importCSV("data1.csv")
 data = parseData(csv)
 weight = entropyWeight(data)
