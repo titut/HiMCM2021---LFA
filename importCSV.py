@@ -9,7 +9,7 @@ def importCSV(file):
             arr.append(row)
         for y in range(0, len(arr)):
             arr[y].pop(0)
-            for i in range(0, len(y)):
-                print(i)
             arr[y].pop(1)
+            if(arr[y][4] == "N/A"):
+                arr[y][4] = arr[y][3]
         return np.array(arr).astype(np.float)
