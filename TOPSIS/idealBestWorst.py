@@ -8,7 +8,7 @@ def getBestWorst(data, impact):
     returnArr = np.array([])
     index = 0
     for i in arr:
-        if(impact[index] == 1):
+        if(impact[index] == 0):
             bestArr = np.append(bestArr, np.square(i-i.min()))
         else:
             bestArr = np.append(bestArr, np.square(i-i.max()))
@@ -19,7 +19,7 @@ def getBestWorst(data, impact):
         returnArr = np.append(returnArr, math.sqrt(sum(i)))
     index = 0
     for i in arr:
-        if(impact[index] == 1):
+        if(impact[index] == 0):
             worstArr = np.append(worstArr, np.square(i-i.max()))
         else:
             worstArr = np.append(worstArr, np.square(i-i.min()))

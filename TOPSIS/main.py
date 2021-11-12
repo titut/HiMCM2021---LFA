@@ -6,8 +6,9 @@ from calculateScore import calculate
 #import data from csv file
 print('Importing data...')
 data = importCSV("data.csv")
-weights = [1,1,1,1,1]
-impact = [0,0,0,0,1]
+weights = [1,1,1,1,1]#subjective average 
+#impact = [8,256,7,5000,25000]
+impact = [1,1,1,1,0]
 print(data)
 
 #normalize data
