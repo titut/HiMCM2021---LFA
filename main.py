@@ -8,6 +8,7 @@ from pprint import pprint
 #one for loop instead? combine functions of parseData and import?
 names,csv = importCSV("data1.csv")
 data = parseData(csv)
+print(data)
 weight = entropyWeight(data)
 impact = [1,1,1,1,1]
 
